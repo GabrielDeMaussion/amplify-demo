@@ -1,6 +1,6 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { env } from '../app/environments/env';
+import { env } from './environments/entorno';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,10 @@ export class App implements OnInit {
   environment = env;
   
   ngOnInit(): void {
-      console.log('App running on ' + this.environment);
+      console.log('App running on ' + this.environment.name);
+      if (this.environment.testerName) {
+          console.log('Tester: ' + this.environment.testerName);
+      }
   }
   
 }

@@ -57,8 +57,16 @@
             "dev":{
               "fileReplacements": [
                 {
-                  "replace": "src/app/environments/env.ts",
+                  "replace": "src/app/environments/entorno.ts",
                   "with": "src/app/environments/env.dev.ts"
+                }
+              ]
+            },
+            "qa":{
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/entorno.ts",
+                  "with": "src/app/environments/env.qa.ts"
                 }
               ]
             }
