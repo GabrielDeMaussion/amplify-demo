@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         # - npm run build -- --configuration=$ENV
-        - npm run timo
+        - npm run timo -- --configuration=$ENV
   artifacts:
     baseDirectory: dist/amplify-demo/browser
     files:
