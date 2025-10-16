@@ -5,8 +5,6 @@ import { env } from '../environments/entorno';
   providedIn: 'root'
 })
 export class MyServiceService {
-
-  appUrl = env.apiUrl;
   
 
 constructor() { }
