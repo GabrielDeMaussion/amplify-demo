@@ -11,12 +11,9 @@ import { env } from './environments/entorno';
 export class App implements OnInit {
   protected readonly title = signal('amplify-demo');
   environment = env;
-  
+
   ngOnInit(): void {
-      console.log('App running on ' + this.environment.name);
-      if (this.environment.testerName) {
-          console.log('Tester: ' + this.environment.testerName);
-      }
+    console.log('App running on ' + this.environment.name);
   }
-  
+
 }
