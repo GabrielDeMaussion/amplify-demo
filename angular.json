@@ -34,7 +34,7 @@
             ]
           },
           "configurations": {
-            "production": {
+            "prod": {
               "budgets": [
                 {
                   "type": "initial",
@@ -49,12 +49,10 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
+            "dev": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
-            },
-            "dev":{
+              "sourceMap": true,
               "fileReplacements": [
                 {
                   "replace": "src/app/environments/entorno.ts",
@@ -71,7 +69,7 @@
               ]
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "dev"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
